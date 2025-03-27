@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      "mobile": "375px",
+      "desktop": "1440px"
+    },
     extend: {
       fontFamily: {
         "readex-pro": ["Readex Pro", "sans-serif"],
@@ -27,7 +31,7 @@ export default {
         "purple": "#ABA4FE",
         "pink": "#FEA4E5",
         // seBlack
-        "seBlack-1": "#FEA4E5",
+        "seBlack-1": "#252A3F",
         "seBlack-2": "#2A2F46",
         "seBlack-3": "#30364F",
         // Black
