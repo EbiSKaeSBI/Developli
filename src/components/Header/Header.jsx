@@ -100,7 +100,7 @@ const Header = () => {
             {isMenuOpen && (
                 <div className="fixed inset-0 top-20 bg-white z-20 px-4 py-6">
                     <nav className='flex flex-col items-starts gap-8 h-full'>
-                        <div className="max-w-[341px] w-full">
+                        <div className="min-w-[341px] w-full">
                             <ul className='flex flex-col items-center gap-2'>
                                 {/* Employers Dropdown */}
                                 <li className='w-full  items-center justify-between flex'>
