@@ -33,7 +33,7 @@ const listRender = (items) => (
 )
 const Footer = () => {
     return (
-        <footer className="bg-[#EEE8DD] font-readex-pro  rounded-t-[30px] container center">
+        <footer className="bg-[#EEE8DD] font-readex-pro  rounded-t-[30px]  center">
             <div className="flex mobile:flex-col mobile:items-start mobile:justify-center desktop:flex-row desktop:justify-between pt-[75px] pb-[45px]">
                 <img src={logo} alt="" />
                 <div className='flex flex-col text-sm text-[#242D3C] py-5 gap-1'>

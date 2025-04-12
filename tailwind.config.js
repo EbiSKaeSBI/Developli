@@ -3,11 +3,16 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens:{
       "mobile": "375px",
       "desktop": "1440px"
+    },
+    container: {
+      center: true,
+      padding: "1,25rem",
     },
     extend: {
       fontFamily: {
