@@ -56,7 +56,7 @@ const Header = () => {
     );
 
     return (
-        <header className='sticky font-readex-pro text-grey-1 top-0 z-[20] flex justify-between desktop:items-center desktop:px-[100px] desktop:py-[36px] mobile:py-[25px] mobile:px-[20px] bg-white'>
+        <header className='sticky font-readex-pro text-grey-1 top-0 z-[20] flex justify-between desktop:items-center desktop:px-[100px] desktop:py-[36px] mobile:py-[25px] mobile:px-[20px] bg-[#DEEBDC]'>
             <a href="#"><img src={logo} alt="Logo" className='max-h-8' /></a>
 
             {/* Desktop navigation */}
@@ -98,7 +98,7 @@ const Header = () => {
 
             {/* Mobile menu */}
             {isMenuOpen && (
-                <div className="fixed inset-0 top-20 bg-white z-20 px-4 py-6">
+                <div className="fixed inset-0 top-20 bg-gradient-to-b from-[#DEEBDC] to-[#FBF3E5] z-20 px-4 py-6">
                     <nav className='flex flex-col items-starts gap-8 h-full'>
                         <div className="min-w-[341px] w-full">
                             <ul className='flex flex-col items-center gap-2'>
