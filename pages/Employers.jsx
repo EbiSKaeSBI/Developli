@@ -31,7 +31,7 @@ const Employers = () => {
                     <BenefitCard Benefit={{ id: 3, title: "Easily find quality matches", text: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies" }} />
                 </div>
             </section>
-            <section className="font-readex-pro bg-[#B1DFC9]">
+            <section className="font-readex-pro bg-[#B1DFC9] overflow-x-hidden">
                 <div className="bg-[url('./assets/bgVector.svg')] bg-no-repeat bg-contain flex flex-col px-5">
                     <img src={logo} alt="logo"  className="max-w-[130px] mb-[38px] mt-[34px]"/>
                     <div className="flex flex-col gap-5 mb-[30px]">
