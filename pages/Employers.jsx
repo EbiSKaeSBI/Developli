@@ -2,11 +2,44 @@ import employers from "../src/assets/peoplegroup.png"
 import BenefitCard from "../src/components/BenefitCard/BenefitCard"
 import logo from "../src/assets/seBlack1Logo.svg"
 import website from "../src/assets/website.png"
+import wifi from "../src/assets/wifi.svg"
+import zoom from "../src/assets/zoom.svg"
+import user from '../src/assets/user.svg'
+import smart from "../src/assets/smart.svg"
+import BenefitCards from "../src/components/BenifitCards/BenefitCards"
 const Employers = () => {
+    const BenefitCardsArray = [{
+        id: 1,
+        img: "../src/assets/wifi.svg",
+        title: "Detailed analytics",
+        desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        color: "#E1A814"
+    },{
+        id: 2,
+        img: "../src/assets/zoom.svg",
+        title: "Zoom integration",
+        desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        color: "#3860E2"
+    },
+    {
+        id: 3,
+        img: "../src/assets/smart.svg",
+        title: "Smart testing",
+        desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        color: "#47D18C"
+    },
+    {
+        id: 4,
+        img: "../src/assets/user.svg",
+        title: "User Rating",
+        desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        color: "#A3A93B"
+    },
+]
     return (
         <>
 
-            <section className="container top-[50px] overflow-hidden bg-gradient-to-b from-[#DEEBDC] to-[#FBF3E5]">
+            <section className="top-[50px] overflow-hidden bg-gradient-to-b from-[#DEEBDC] to-[#FBF3E5]">
                 <h1 className="font-bold font-readex-pro text-2xl text-black-1 text-center ">Let’s <span className="text-green-2">boost up</span><br />
                     your hiring process</h1>
                 <p className="text-center text-grey-1 my-[30px] font-readex-pro">We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
@@ -41,6 +74,16 @@ const Employers = () => {
                     <button className="px-5 py-[14px] bg-[#F6F8F9] rounded-[12px] w-[335px] text-[#7F879E] mb-[44px] text-[12px]">Get started</button>
                     <img src={website} alt="" className="translate-x-[50px] "/>
                 </div>
+            </section>
+            <section className="font-readex-pro overflow-x-hidden bg-[#FBF3E5] flex flex-col items-center px-5">
+                <div className="my-[50px] flex flex-col gap-[30px] items-center text-center">
+                <h2 className="font-bold text-2xl text-seBlack-1">A world o<span className="text-green-2">f opportunities</span></h2>
+                <p className="text-[#7F879E] text-sm">We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
+                </div>
+                <div className="gap-5 flex flex-col">
+                {BenefitCardsArray.map((card) => <BenefitCards key={card.id} Benefit={{...card}} />)}  
+                </div>
+                
             </section>
         </>
     )
