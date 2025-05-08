@@ -7,33 +7,88 @@ import zoom from "../src/assets/zoom.svg"
 import user from '../src/assets/user.svg'
 import smart from "../src/assets/smart.svg"
 import BenefitCards from "../src/components/BenifitCards/BenefitCards"
+import Airbnb from "../src/assets/Airbnb.svg"
+import Stripe from "../src/assets/Stripe.svg" 
+import Google from "../src/assets/Google.svg"
+import InVision from "../src/assets/InVision_logo.svg"
+import Zendesk from "../src/assets/Zendesk.svg"
+import Rakuten from "../src/assets/Rakuten.svg"
+import Upwork from "../src/assets/Upwork.svg" 
+import Amazon from "../src/assets/Amazon.svg"   
+import CompanyCard from "../src/components/CompanyCard/CompanyCard"
+import ArrowRight from "../src/assets/arrow-right.svg"
+import Woman from "../src/assets/woman.png"
 const Employers = () => {
+
+
+    // SVG для карточек примущества
+    const wifiIcon = wifi
+    const zoomIcon = zoom
+    const userIcon = user
+    const smartIcon = smart
+
+    // SVG для карточек компаний
+    const AirbnbLogo = Airbnb
+    const StripeLogo = Stripe
+    const GoogleLogo = Google
+    const InVisionLogo = InVision
+    const ZendeskLogo = Zendesk
+    const RakutenLogo = Rakuten
+    const UpworkLogo = Upwork
+    const AmazonLogo = Amazon
+
+    const LogosArray = [AirbnbLogo,StripeLogo,GoogleLogo,InVisionLogo,RakutenLogo,ZendeskLogo]
+
+
+    const CompanyCards = [{
+        id: 1,
+        svg: AirbnbLogo,
+        content: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        subcontext: "Leila Khoury, CEO",
+    },
+    {
+        id: 2,
+        svg: UpworkLogo,
+        content: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        subcontext: "Leila Khoury, CEO",
+    },{
+        id: 3,
+        svg: AmazonLogo,
+        content: "We are nost efficient and reliable souce of hiring perocess and ",
+        subcontext: "Leila Khoury, CEO",
+    },{
+        id: 4,
+        svg: GoogleLogo,
+        content: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
+        subcontext: "Leila Khoury, CEO",
+    },]
+
     const BenefitCardsArray = [{
         id: 1,
-        img: "../src/assets/wifi.svg",
+        img: wifiIcon,
         title: "Detailed analytics",
         desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
-        color: "#E1A814"
+        color: "wifi-color"
     },{
         id: 2,
-        img: "../src/assets/zoom.svg",
+        img: zoomIcon,
         title: "Zoom integration",
         desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
-        color: "#3860E2"
+        color: "zoom-color"
     },
     {
         id: 3,
-        img: "../src/assets/smart.svg",
+        img: smartIcon,
         title: "Smart testing",
         desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
-        color: "#47D18C"
+        color: "smart-color"
     },
     {
         id: 4,
-        img: "../src/assets/user.svg",
+        img: userIcon,
         title: "User Rating",
         desription: "We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies",
-        color: "#A3A93B"
+        color: "user-color"
     },
 ]
     return (
@@ -83,7 +138,32 @@ const Employers = () => {
                 <div className="gap-5 flex flex-col">
                 {BenefitCardsArray.map((card) => <BenefitCards key={card.id} Benefit={{...card}} />)}  
                 </div>
-                
+            </section>
+            <section>
+            <div className="my-[50px] flex flex-col gap-[30px] items-center text-center">
+                <h2 className="font-bold text-2xl text-seBlack-1">A world o<span className="text-green-2">f opportunities</span></h2>
+                <p className="text-[#7F879E] text-sm">We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
+                </div>
+                <div className="flex flex-col items-center gap-[25px] ">
+                    {CompanyCards.map((card) => <CompanyCard key={card.id} CompanyCards={{...card}}/> )}
+                </div>
+                <div className="">
+                <marquee  className="flex mt-[45px] mb-[50px]">
+                    {LogosArray.map((items, index) => (
+                        <img key={index} src={items} className="inline-flex ml-5"/>
+                    ))}
+                </marquee>
+                </div>
+            </section>
+            <section className="font-readex-pro">
+                <div className="bg-[#B6DAFF] mx-5 flex flex-col items-center rounded-[20px] gap-[50px] pt-[84px]">
+                    <h2 className="text-2xl text-seBlack-1 font-bold">Hire your<br />
+                    dream team today</h2>
+                    <button className="font-bold text-white py-[15px] flex gap-2 bg-seBlack-1 rounded-[10px] px-[75px]">Post a job
+                        <img src={ArrowRight} alt="" />
+                    </button>
+                    <img src={Woman} alt="" />
+                </div>
             </section>
         </>
     )

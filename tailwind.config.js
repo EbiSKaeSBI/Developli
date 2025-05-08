@@ -59,6 +59,13 @@ export default {
         "Al-green-1": "#3D5BF6",
         "Al-green-2": "#78C58C",
         "Al-green-3": "#BBE2C6",
+
+
+        // Other needs 
+        "user-color": "#A3A93B",
+        "smart-color": "#47D18C",
+        "zoom-color": "#3860E2",
+        "wifi-color": "#E1A814",
       }
     },
   },
