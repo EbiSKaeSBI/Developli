@@ -156,7 +156,7 @@ const Employers = () => {
                 </div>
             </section>
             <section className="font-readex-pro">
-                <div className="bg-[#B6DAFF] mx-5 flex flex-col items-center rounded-[20px] gap-[50px] pt-[84px]">
+                <div className="bg-[#B6DAFF] mx-5 flex flex-col items-center rounded-[20px] gap-[50px] pt-[84px] mb-[50px]">
                     <h2 className="text-2xl text-seBlack-1 font-bold">Hire your<br />
                     dream team today</h2>
                     <button className="font-bold text-white py-[15px] flex gap-2 bg-seBlack-1 rounded-[10px] px-[75px]">Post a job
